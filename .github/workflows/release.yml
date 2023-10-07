@@ -36,4 +36,6 @@ jobs:
       env:
         DOCKER_REGISTRY: ghcr.io
         DOCKER_ORG: vseth-geco
+        DOCKER_REPO: netbox
         DOCKERFILE: Dockerfile-Plugins
+        IMAGE_NAMES: ghcr.io/vseth-geco/netbox
