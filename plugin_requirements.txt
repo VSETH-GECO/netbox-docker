@@ -1,0 +1,2 @@
+netbox-napalm-plugin
+napalm-ruckus-fastiron
