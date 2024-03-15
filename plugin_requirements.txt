@@ -1,2 +1,2 @@
-netbox-napalm-plugin @ git+https://github.com/VSETH-GECO/netbox-napalm.git@ab2d204
+netbox-napalm-plugin @ git+https://github.com/VSETH-GECO/netbox-napalm.git@23f11b2
 napalm-ruckus-fastiron
