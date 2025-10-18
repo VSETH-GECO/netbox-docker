@@ -364,7 +364,6 @@ gh_echo "::group::🏗 Building the image"
 ###
 DOCKER_BUILD_ARGS=(
   --pull
-  --target main
   -f "${DOCKERFILE}"
 )
 for IMAGE_NAME in "${IMAGE_NAME_TAGS[@]}"; do

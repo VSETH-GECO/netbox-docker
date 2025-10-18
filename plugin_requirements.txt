@@ -1,0 +1,1 @@
+netbox-napalm-plugin==0.3.3

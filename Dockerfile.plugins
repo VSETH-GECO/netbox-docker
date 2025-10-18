@@ -1,0 +1,15 @@
+# https://github.com/netbox-community/netbox-docker/wiki/Using-Netbox-Plugins
+FROM netboxcommunity/netbox:v4.4
+
+COPY ./plugin_requirements.txt /opt/netbox/
+
+ENV VIRTUAL_ENV=/opt/netbox/venv
+RUN apt update && \
+  apt install -y git && \
+  /usr/local/bin/uv pip install -r /opt/netbox/plugin_requirements.txt && \
+  rm -rf /var/lib/apt/lists/*
+
+# These lines are only required if your plugin has its own static files.
+COPY configuration/configuration.py /etc/netbox/config/configuration.py
+COPY configuration/plugins.py /etc/netbox/config/plugins.py
+RUN SECRET_KEY="dummydummydummydummydummydummydummydummydummydummy" /opt/netbox/venv/bin/python /opt/netbox/netbox/manage.py collectstatic --no-input
