@@ -1,5 +1,6 @@
 # https://github.com/netbox-community/netbox-docker/wiki/Using-Netbox-Plugins
-FROM netboxcommunity/netbox:v4.4
+# technically it is v4.4-3.4.1 (required to be compatible with this repo version)
+FROM netboxcommunity/netbox:v4.4 
 
 COPY ./plugin_requirements.txt /opt/netbox/
 
