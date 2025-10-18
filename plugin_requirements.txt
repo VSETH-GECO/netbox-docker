@@ -1,1 +1,2 @@
 netbox-napalm-plugin==0.3.3
+napalm-ruckus-fastiron
