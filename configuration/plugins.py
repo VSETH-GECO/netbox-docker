@@ -11,6 +11,7 @@ PLUGINS = [
     'netbox_napalm_plugin',
     'netbox_qrcode',
     'netbox_floorplan',
+    'netbox_topology_views', 
 ]
 
 # # Plugins configuration settings. These settings are used by various plugins that the user may have installed.
