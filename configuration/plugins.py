@@ -9,7 +9,8 @@ from os import environ
 # # Enable installed plugins. Add the name of each plugin to the list.
 PLUGINS = [
     'netbox_napalm_plugin',
-    'netbox_qrcode'
+    'netbox_qrcode',
+    'netbox_floorplan',
 ]
 
 # # Plugins configuration settings. These settings are used by various plugins that the user may have installed.
