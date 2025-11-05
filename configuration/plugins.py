@@ -8,11 +8,11 @@ from os import environ
 
 # # Enable installed plugins. Add the name of each plugin to the list.
 PLUGINS = [
-    'netbox_napalm_plugin',
-    'netbox_qrcode',
-    'netbox_floorplan',
-    'netbox_topology_views', 
-    'netbox_inventory',
+    'netbox_napalm_plugin', # https://github.com/netbox-community/netbox-napalm-plugin
+    'netbox_qrcode', # https://github.com/netbox-community/netbox-qrcode
+    'netbox_floorplan', # https://github.com/netbox-community/netbox-floorplan-plugin
+    'netbox_topology_views', # https://github.com/netbox-community/netbox-topology-views
+    'netbox_inventory', # https://github.com/ArnesSI/netbox-inventory
 ]
 
 # # Plugins configuration settings. These settings are used by various plugins that the user may have installed.
